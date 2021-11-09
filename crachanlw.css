@@ -1,0 +1,296 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-image: url(/_imagens/backgroundcleandark.jpg);
+    font-family: Arial, sans-serif;
+    color: white;
+    
+    
+    
+
+    
+   
+}
+
+
+
+
+.perfil1{
+    background-image: url(/_imagens/backgroundrocket.svg);
+    width: 375px;
+    height: 700px;
+    overflow: hidden;
+    animation: decimaprabaixo 1000ms ;
+    box-shadow: red 1px 0px 10px 3px;
+    cursor: pointer;
+    
+    
+   
+}
+
+.perfil1zoom{
+  transform: scale(1.1);
+  transition: 1s;
+   
+}
+
+.perfil2{
+    background-image: url(/_imagens/backgroundrocket.svg);
+    width: 375px;
+    height: 700px;
+    overflow: hidden;
+    animation: decimaprabaixo 1500ms;
+    cursor: pointer;
+    box-shadow: rgb(226, 1, 170) 1px 0px 10px 3px;
+   
+}
+
+
+
+.perfilbox{
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+   
+}
+
+.perfil{
+    width: 10rem;
+    height: 11.5rem;
+    margin-top: 180px;
+    object-fit: cover;
+    border: white 2px;
+    animation: decimaprabaixo 1000ms;
+    border-style: double;
+    cursor: pointer;
+    
+    
+}
+
+.perfil:hover{
+    box-shadow: red 1px 0px 50px;
+}
+
+.perfil_2{
+    width: 9.7rem;
+    height: 11.5rem;
+    margin-top: 180px;
+    object-fit: cover;
+    border: white 2px;
+    animation: decimaprabaixo 1000ms;
+    border-style: double;
+    cursor: pointer;
+    
+}
+
+.perfil_2:hover{
+    box-shadow: rgb(226, 1, 170) 1px 0px 50px;
+}
+
+
+.name{
+    text-align: center;
+    margin-top: 25px;
+    animation: dadireitapraesquerda 1000ms;
+    margin-bottom: 15px;
+
+}
+
+h3{
+    font-size: 16px;
+    margin-top: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: rgba(252, 250, 250, 0.842);
+}
+
+.git img{
+   vertical-align:top;
+   margin-right: 3px;
+}
+
+#descrição{
+    text-align: center;
+    margin-top: 25px;
+    font-size: 16px;
+    font-family: arial;
+    animation: moverdireita 1000ms;
+    font-weight: 500;
+    color: rgba(252, 250, 250, 0.842);
+}
+
+ul{
+    margin-top: 50px;
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+    justify-content: center;
+    animation: debaixopracima 1000ms;
+
+}
+
+
+
+li{
+    cursor: pointer;
+    
+    background: red;
+  
+}
+
+li:first-child:hover{
+    animation: up 500ms;
+    animation-fill-mode: forwards;
+    box-shadow: red 1px 1px 8px;
+}
+
+li:nth-of-type(2){
+    cursor: pointer;
+    
+    background: rgb(0, 119, 255);
+ 
+}
+
+li:nth-of-type(2):hover{
+    animation: up 500ms;
+    animation-fill-mode: forwards;
+    box-shadow: blue 1px 1px 8px;
+    
+ 
+}
+
+li:nth-of-type(3):hover{
+    animation: up 500ms;
+    animation-fill-mode: forwards;
+    box-shadow: rgb(226, 1, 170) 1px 1px 8px;
+ 
+}
+
+li:nth-of-type(4):hover{
+    animation: up 500ms;
+    animation-fill-mode: forwards;
+    box-shadow: rgb(12, 158, 255) 1px 1px 8px;
+ 
+}
+
+li:nth-of-type(3){
+    cursor: pointer;
+    
+    background-color: rgb(226, 1, 170);
+
+}
+
+li:nth-of-type(4){
+    cursor: pointer;
+    background: rgb(12, 158, 255);
+  
+}
+
+@keyframes moverdireita{
+from{
+opacity: 0;
+transform:translateX(-120%);
+}
+to{
+opacity: 1;
+transform: translateX(0%);
+}
+}
+
+@keyframes dadireitapraesquerda{
+from{
+    opacity: 0;
+    transform: translateX(80%);
+}
+to{
+    opacity: 1;
+    transform: translateX(0%);
+}
+}
+@keyframes decimaprabaixo{
+from{
+    opacity: 0;
+    
+    transform: translateY(-80%);
+}
+to{
+    opacity: 1;
+    transform: translatey(0%);
+    
+}
+
+}
+
+@keyframes debaixopracima{
+from{
+    opacity: 0;
+    transform: translateY(300%);
+}
+to{
+    opacity: 1;
+    transform: translatey(0%);
+}
+}
+
+@keyframes up{
+from{
+    
+    transform: translateY(0%);
+}
+to{
+    
+    transform: translatey(-15%);
+}
+}
+
+@keyframes aparecer{
+from{
+    
+    opacity: 0;
+}
+to{
+    
+    opacity: 1;
+}
+}
+
+@keyframes down{
+from{
+    
+    transform: translateY(-25%);
+}
+to{
+    
+    transform: translatey(0%);
+}
+
+}
+
+@keyframes transformation{
+from{
+    
+    border-radius: 150px;
+}
+to{
+    
+    border-radius: 0px;
+}
+
+}
+
+
+
+.redesup{
+   animation: up 500ms;
+   animation-fill-mode: forwards;
+   box-shadow: red 1px 1px 8px;
+   
+}
